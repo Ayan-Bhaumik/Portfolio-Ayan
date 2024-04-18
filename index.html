@@ -6,8 +6,8 @@
     ================================================== -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About - Ayan Bhaumik</title>
-    
+    <title>Ayan Bhaumik</title>
+    <meta name="description" content="Welcome page of Ayan Bhaumik. Learn about Ayan's background, interests, achievement and more.">
 
     <script>
         document.documentElement.classList.remove('no-js');
@@ -27,14 +27,37 @@
     <link rel="manifest" href="site.webmanifest">
 
     
-    
+     <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Ayan Bhaumik",
+  "url": "https://ayanbhaumik.xyz/"
+}
+</script>
+
+
+
 </head>
 
 
 <body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
     <!-- page wrap
     ================================================== -->
-    <div id="page" class="s-pagewrap">
+    <div id="page" class="s-pagewrap ss-home">
 
 
         <!-- # site header 
@@ -56,7 +79,7 @@
                 <nav class="s-header__nav">
     
                     <ul class="s-header__menu-links">
-                        <li class="current"><a href="about.html">About</a></li>
+                        <li><a href="./about.html">About</a></li>
                         <li><a href="./experiance.html">Experience</a></li>
                         <li><a href="./project.html">Project</a></li>
                         <li><a href="./contact.html">Contact</a></li>
@@ -77,161 +100,142 @@
         ================================================== -->
         <section id="content" class="s-content">
 
-               <section class="s-pageheader pageheader">
-                    <div class="row">
-                        <div class="column xl-12">
-                            <h1 class="page-title">
-                               
-                                Hi, I'm Ayan Bhaumik
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro">
+
+                <div class="row s-intro__content width-sixteen-col">
+
+                    <div class="column lg-12 s-intro__content-inner grid-block">
+                        
+                        <div class="s-intro__content-text">
+                            <div class="s-intro__content-pretitle text-pretitle">Hello, I'm Ayan</div>
+                            <h1 class="s-intro__content-title">
+                            I create website <br>
+                             for your business<br>
+                             that get results.<br>
                             </h1>
-                            
                         </div>
-                    </div>
-               </section> <!-- end pageheader --> 
-
-              <section>
-<style>
-
-    #socials-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  gap: 1rem;
-}
-.icon {
-  cursor: pointer;
-  height: 2rem;
-}
-#about {
-  position: relative;
-}
-
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
-}
-.details-container {
-  padding: 1rem;
-  flex: 1;
-  background: white;
-  border-radius: 1rem;
-  border: rgb(10, 10, 10) 0.1rem solid;
-  text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-</style>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                      <div class="details-container">
+                         <!-- s-intro__content-text -->
                       
-                        <h3>Education</h3>
-                       
-                            <br>Completed <u>Intermediate (+2 Stage)</u> from Henry Derozio Academy 
-                            <br> HS (+2 Stage) School, Agartala West Tripura <br>
-                           
-                            <br>Completed <u>Matriculate</u> from Belonia Govt. English Medium H. S. School,
-                            <br>Belonia South Tripura
-                            
-                            
-                        </p>
-                      </div>
-                    </div>
-                    
-                  </div>
+                        <div class="s-intro__content-media"> 
+                            <div class="s-intro__content-media-inner">                               
+                                <img src="./assets/intro-bg.jpg" srcset="./assets/Picture1.png 1x, ./assets/Picture1.png 2x" alt="">
+                                <div class="lines">                               
+                                    <span></span>                                  
+                                </div>
+                            </div>
+                        </div> <!-- s-intro__content-media -->                      
 
-                  <div class="about-details-container">
-                    <div class="about-containers">
-                      <div class="details-container">
-                
-                        <h3>Professional Courses</h3>
-                        <p>
-                             <br>Pursuing <u>B.Tech in Computer Science & Engineering</u> 
-                             <br> from <b> ICFAI UniversityTripura</b> <br>
-                            
-                            <br>Completed  <u>Project Management Foundations</u><br> from <b>LinkedIn</b><br>
-                            
-                            <br>Completed <u>Career Essentials in Cybersecurity</u><br> from <b>Microsoft and LinkedIn</b> <br>
+                        <div class="s-intro__scroll-down">
+                            <a href="#about" class="smoothscroll">
+                                <div class="scroll-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="none" 
+                                    stroke="#97b34a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">&lt;!--!  Atomicons Free 1.00 by @atisalab License - https://atomicons.com/license/ (Icons: CC BY 4.0) Copyright 2021 Atomicons --&gt;<polyline points="7 13 12 18 17 13"></polyline><line x1="12" y1="18" x2="12" y2="6"></line></svg>
+                                </div>
+                                <span>Scroll for more</span>
+                            </a>
+                        </div> <!-- s-intro__scroll-down -->
+                        
+                    </div> <!-- s-intro__content-inner -->
 
-                            <br>Completed <u>Software Programming</u><br> from <b>Brainware University</b> <br>
-                            
-                            <br>Completed <u>Career Essentials in Generative AI</u><br> from <b>Microsoft and LinkedIn</b> <br>
-                            
-                        </p>
-                      </div>
-                    </div>
-                    
-                  </div>
+                </div> <!-- s-intro__content -->
 
-              </section>   
-                    
-                    <div class="row pagemedia">
-                        <div class="column xl-12">
-                            <figure class="page-media">                                
-                                <img src="images/thumbs/about/about-1200.jpg" 
-                                     srcset="images/thumbs/about/about-2400.jpg 2400w, 
-                                             images/thumbs/about/about-1200.jpg 1200w, 
-                                             images/thumbs/about/about-600.jpg 600w" sizes="(max-width: 2400px) 100vw, 2400px" alt="">
-                            </figure>
+            </section> <!-- end s-intro -->
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row s-about__content width-sixteen-col">
+                    <div class="column grid-block grid-section-split">
+
+                        <img src="./assets/geometric_shape.svg" alt="" class="s-about__content-imgbg">
+
+                        <div class="section-header grid-section-split__header">
+                            <div class="text-pretitle">About</div>                           
+                            <h1 class="text-display-title">
+                                Ayan Bhaumik 
+                            </h1>                           
                         </div>
-                    </div> <!-- end pagemedia -->
+                        
+                        <div class="s-about__content-main grid-section-split__primary">
+                            <p class="attention-getter">
+                               With more than four years of extensive experience across a range of disciplines, including Web Development,
+                                 Web Application, Web Designing, SEO, Cyber Security, and Project Management, I offer a comprehensive skill
+                                set tailored to meet the dynamic demands of the digital realm. <br>
+                                <br>
+                                My expertise transcends conventional boundaries, encompassing a diverse range of skills finely tuned to adapt
+                                 to the evolving needs of the digital landscape. Alongside my broad experience, I possess a profound understanding
+                                  and practical proficiency in HTML, CSS, JavaScript, and Python, forming the cornerstone for crafting dynamic
+                                   and responsive web solutions.<br>
+                                   <br>
+                                Additionally, my mastery of WordPress enables me to harness its capabilities effectively, facilitating seamless
+                                 content management and customization across various industries. My journey in Cyber Security has equipped me 
+                                 with the knowledge and tools necessary to fortify digital infrastructures against potential threats, ensuring
+                                  resilience in an ever-evolving landscape of cybersecurity challenges.<br>
+                                  <br>
+                                Furthermore, my adeptness in Project Management allows me to orchestrate seamless workflows, ensuring timely
+                                 delivery and alignment with project objectives. Fueled by a passion for innovation and a commitment to excellence,
+                                  I excel in dynamic environments, leveraging my diverse skill set to exceed client expectations and deliver
+                                   tangible results.<br>
+                                   <br>
+                                With a proven track record of success and an unwavering dedication to excellence, I am poised to make significant
+                                 contributions to any project or team I join.<br>
+                            </p><!-- end section-header -->
 
-                    <div class="row width-narrower pagemain">
-                        <div class="column xl-12"> 
+         <!-- end s-about__content-main -->
 
-                            <h2>How I Got Here</h2>
-                            <p> My path to becoming a web developer is a journey marked by a blend of formal education, hands-on experience, perpetual learning, and the cultivation of a robust portfolio. </p>
- <p>My journey commenced with a foundational understanding of web development, delving into its core principles and methodologies. Recognizing my aptitude and inclination, I elected to specialize in front-end and back-end development, aiming to master the intricacies of both domains. As I honed my skills, I delved into popular frameworks and libraries pertinent to my chosen specialization, enriching my toolkit and broadening my expertise.</p> 
-<p>Central to my growth as a developer is the relentless pursuit of practice. Through the creation of diverse projects, ranging from simplistic websites to intricate web applications, I not only solidify my understanding but also cultivate a tangible portfolio that reflects my capabilities and problem-solving acumen. This portfolio serves as a testament to my proficiency and serves to distinguish me in a competitive landscape.</p> 
-<p>Aware of the ever-evolving nature of web development, I remain steadfast in my commitment to continuous learning. By nurturing a spirit of curiosity and embracing emerging technologies, techniques, and methodologies, I ensure my skills remain relevant and adaptive to industry demands. This proactive approach not only enhances my professional growth but also positions me as a forward-thinking contributor within the dynamic realm of web development.</p> 
-<p>In essence, my journey as a web developer is characterized by an unwavering dedication to excellence, a hunger for knowledge, and a relentless pursuit of innovation. Armed with a solid foundation, a diverse skill set, and an insatiable thirst for growth, I am poised to make meaningful contributions and thrive in the ever-evolving landscape of web development.</p>
+                        <div class="s-about__content-btn grid-section-split__bottom">
+                            <a href="./about.html" class="btn btn--stroke u-fullwidth">More About Me</a>
 
+                            <ul class="s-about__social social-list">
+                                <li>
+                                    <a href="https://www.facebook.com/profile.php?id=100083900564550">
+                                        <img width="50" height="50" src="https://img.icons8.com/bubbles/50/facebook.png" alt="facebook"/>
+                                        <span class="u-screen-reader-text">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/mrayanbk">
+                                       <img src="data:image/png;base64,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">
+                                        <span class="u-screen-reader-text">Twitter X</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/ayan.bk_/">
+                                        <img width="50" height="50" 
+                                        src="https://img.icons8.com/bubbles/50/instagram-new--v2.png" alt="instagram-new--v2"/>
+                                        <span class="u-screen-reader-text">Instagram</span>
+                                    </a>
+                                </li>
 
+                                <li>
+                                    <a href="https://www.linkedin.com/in/ayan-bhaumik-022807289/">
+                                        <img width="50" height="50" 
+                                       <img src="data:image/png;base64,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">
+                                        <span class="u-screen-reader-text">Linkedin</span>
+                                    </a>
+                                </li>
+                               
+                            </ul> <!-- end s-footer__social -->
+                        </div> <!-- end s-about__content-btn -->
+                    
+                    </div> <!-- content-inner -->
+                </div>
+                
+            </section> <!-- end s-about -->
 
-</p> 
-                            <p>I Stay curious and keep exploring new technologies, techniques, and 
-                                methodologies to improve my skills and stay competitive in the industry.</p>
-                                
-            
-
-                            <h2>Why Work With Me</h2>
-                            <p> I'am experienced  enough to work on projects of all sizes, complexities, and deadlines. I am passionate about creating innovative solutions that make life easier for users. My strength lies in problem solving, creativity, adaptability, and teamwork. I have industrial knowledge  of software development life cycle (SDLC) which helps me understand client's needs thoroughly.I always scope up with the technology WHICH allows me to understand client's requirements thoroughly. </p>
-
-
-            
-
-                        </div> <!-- end grid-block-->
-                    </div> <!-- end pagemain -->
-
-               </section> <!-- pagecontent --> <!-- end s-testimonials -->
-
-        </section> <!-- s-content-->
-
-        <!-- # cta
-        ================================================== -->
         <section id="cta" class="s-cta">
 
             <div class="row row-x-center text-center">
                 <div class="column xl-8 lg-12">
 
                     <div class="s-cta__content">
-                        <h2 class="text-display-title">
-                        Get started with a consultation today.
-                        </h2>
+                        <h3 class="text-display-title">
+                        Get started with a consultation today and give life to your imagination.
+                        </h3>
+                       
                         <a href="./contact.html" class="btn btn--primary">Let's Work Together</a>
                     </div>
 
@@ -240,6 +244,7 @@
 
         </section> <!-- end s-cta -->
 
+   
 
         <!-- # footer 
         ================================================== -->
@@ -282,7 +287,6 @@
                                 <span class="u-screen-reader-text">Instagram</span>
                             </a>
                         </li>
-
                         <li>
                             <a href="https://www.linkedin.com/in/ayan-bhaumik-022807289/">
                                 <img width="50" height="50" 
