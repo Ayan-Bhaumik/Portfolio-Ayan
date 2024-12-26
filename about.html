@@ -162,9 +162,26 @@
     
   </div>
   <center><h3><b>Professional Courses</b></h3></center>
+  <style>
+    .card-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      flex: 0 0 auto; 
+      margin-right: 20px; 
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+
   <div class="about-details-container">
     <div class="about-containers">
       <div class="details-container">
+        <h3><b>Professional Courses</b></h3>
         <div class="card-slider">
           <div class="card">
             <h4>Project Management Foundations</h4>
@@ -190,12 +207,11 @@
             <h4>Elements of AI</h4>
             <p>Completed from <b>University of Helsinki and MinnaLearn</b></p>
           </div>
-        </div>
-        <div class="card">
-          <h4>Data Science & Analytics</h4>
-          <p>Completed from <b>HP LIFE</b></p>
-        </div>
-        <div class="card">
+          <div class="card">
+            <h4>Data Science & Analytics</h4>
+            <p>Completed from <b>HP LIFE</b></p>
+          </div>
+          <div class="card">
             <h4>Machine Learning using Python</h4>
             <p>Completed from <b>Simplilearn</b></p>
           </div>
@@ -203,27 +219,10 @@
             <h4>Tata Group - Data Visualisation</h4>
             <p>Completed from <b>Forage</b></p>
           </div>
-
         </div>
       </div>
     </div>
   </div>
-  
-  <style>
-    .card-slider {
-      display: flex;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-    }
-  
-    .card {
-      flex: 0 0 auto; /* Ensure cards don't shrink beyond their content */
-      margin-right: 20px; /* Add spacing between cards */
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-  </style>
 
               </section>   
                     
