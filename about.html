@@ -162,27 +162,61 @@
     
   </div>
   <center><h3><b>Professional Courses</b></h3></center>
-
-  <style>
+<!--====================================================== # CARDS ================================================== -->
+  
+<style>
     .card-slider {
       display: flex;
       overflow-x: auto;
       scroll-behavior: smooth;
+      gap: 20px;
+      padding-bottom: 10px;
     }
-
+  
     .card {
-      flex: 0 0 auto; 
-      margin-right: 20px; 
+      flex: 0 0 auto;
+      margin-right: 20px;
       padding: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
+      min-width: 200px;
+      box-sizing: border-box;
+    }
+  
+    /* Basic styling for larger screens */
+    @media (max-width: 1200px) {
+      .card-slider {
+        gap: 15px;
+      }
+      .card {
+        min-width: 180px;
+      }
+    }
+  
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      .card-slider {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .card {
+        min-width: 100%;
+        margin-right: 0;
+      }
+    }
+  
+    /* Additional styling for very small screens (optional) */
+    @media (max-width: 480px) {
+      .card {
+        padding: 10px;
+      }
     }
   </style>
-
+  
   <div class="about-details-container">
     <div class="about-containers">
       <div class="details-container">
-        <h3><b>Professional Courses</b></h3>
         <div class="card-slider">
           <div class="card">
             <h4>Project Management Foundations</h4>
@@ -224,6 +258,7 @@
       </div>
     </div>
   </div>
+  
 
 <!--====================================================== # Content ================================================== -->
               </section>   
