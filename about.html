@@ -160,33 +160,40 @@
     
   </div>
 
-  <!DOCTYPE html>
-<html>
-<head>
+
   <style>
     .card-slider {
       display: flex;
       overflow-x: auto;
       scroll-behavior: smooth;
+      flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+      justify-content: center; /* Center cards horizontally */
     }
-
+  
     .card {
       flex: 0 0 auto; 
       margin-right: 20px; 
+      margin-bottom: 20px; /* Add margin-bottom for wrapping */
       padding: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
       transition: transform 0.3s ease-in-out; 
       background-color: #f8f8f8; 
+      width: 250px; /* Set a maximum width for cards */
     }
-
+  
     .card:hover {
       transform: scale(1.05); 
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+  
+    @media (max-width: 768px) { /* Adjust width for smaller screens */
+      .card {
+        width: 180px; 
+      }
+    }
   </style>
-</head>
-<body>
+  
   <div class="about-details-container">
     <div class="about-containers">
       <div class="details-container">
@@ -212,8 +219,7 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+
 
               </section>   
                     
